@@ -1,0 +1,47 @@
+{
+    "name": "Feedback Bot",
+    "description": "Powerful Telegram bot to connect with sanila",
+    "repository": "https://github.com/sanila2007/Sanila-Assistant-Bot",
+    "logo": "https://telegra.ph/file/f7dc9203585394d0595b1.jpg",
+    "keywords": [
+        "feedback bot",
+        "feedback collector",
+        "pyrogram bot",
+        "report collector",
+        "Telegram bot",
+        "assistant bot"
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Get from Telegram's @BotFather",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description": "Create a public channel and enter the username here. NOT THE LINK MUST BE THE USERNAME!!",
+            "required": true
+        },
+        "FEEDBACK_CHANNEL": {
+            "description": "Create a public channel and enter the username here. NOT THE LINK MUST BE THE USERNAME!! (optional)",
+            "required": false
+        }
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
